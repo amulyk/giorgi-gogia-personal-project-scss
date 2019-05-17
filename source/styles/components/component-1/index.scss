@@ -1,21 +1,21 @@
-@import 'base.scss';
+@import 'base';
 
 @media #{$mobile} {
-    @import 'mobile.scss';
+    @import 'mobile';
 }
 
 @media #{$tablet} {
-    @import 'tablet.scss';
+    @import 'tablet';
 }
 
 @media #{$desktop} {
-    @import 'desktop.scss';
+    @import 'desktop';
 }
 
 @media #{$desktop-large} {
-    @import 'desktop-large.scss';
+    @import 'desktop-large';
 }
 
 @media #{$desktop-x-large} {
-    @import 'desktop-x-large.scss';
+    @import 'desktop-x-large';
 }

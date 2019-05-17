@@ -6,9 +6,9 @@
         width: 100%;
         margin-top: -11px;
         margin-left: 0;
-        
+
         h4 {
-            margin-left: 0;
+            margin-left: -2px;
             transform: translate(-1px, -1px);
             font-size: 25px;
             word-spacing: normal;
@@ -16,12 +16,12 @@
 
         h3 {
             margin-bottom: 2px;
-            margin-left: 43px;
+            margin-left: -6px;
+            transform: translateY(-3px);
             font-size: 30px;
             letter-spacing: -.5px;
-            text-align: left;
-            word-spacing: -1px;
-            transform: translateY(-3px);
+            text-align: center;
+            word-spacing: 5px;
         }
 
         p {
@@ -34,7 +34,7 @@
             white-space: nowrap;
             word-spacing: .5px;
         }
-        
+
         a {
             margin-left: 0;
             padding: 3px 7px 3px 9px;

@@ -13,7 +13,7 @@
 
         &::after {
             background-color: $color-2;
-            background-image: url(../../../images/component-3/info.png);
+            background-image: url(/images/component-3/info.png);
         }
 
         span {
@@ -23,12 +23,14 @@
 
     .center {
         display: flex;
-        position: raleative;
+        position: relative;
         align-items: center;
         width: 1170px;
 
         .img {
             flex-shrink: 0;
+            width: 510px;
+            height: 407px;
             margin-top: -8px;
             margin-right: 91px;
             margin-left: -3px;
@@ -79,25 +81,21 @@
                         float: left;
                         border-radius: 50%;
                         background-color: $color-9;
-                        background-image: url(../../../images/component-3/settings.png);
                         background-repeat: no-repeat;
                         background-position: center;
                     }
 
-                    &.feat::before {
-                        background-image: url(../../../images/component-3/settings.png);
-                    }
 
-                    &.location::before {
-                        background-image: url(../../../images/component-3/location.png);
-                    }
 
-                    &.heart::before {
-                        background-image: url(../../../images/component-3/heart.png);
-                    }
+                    $icons: (one:'settings.png', two: 'location.png', three: 'heart.png', four: 'new.png');
 
-                    &.edit::before {
-                        background-image: url(../../../images/component-3/new.png);
+                    @each $index, $icon in $icons {
+                        
+                        &.#{$index} {
+                            &::before {
+                                background-image: url(/images/component-3/#{$icon});    
+                            }
+                        }
                     }
 
                     h6 {
