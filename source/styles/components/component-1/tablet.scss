@@ -1,0 +1,43 @@
+header {
+    padding: 28px 5px 34px;
+
+    .wrapper {
+        width: 100%;
+        padding: 0 22px 0 20px;
+
+        div {
+            display: none;
+        }
+
+        .logo {
+            transform: translateY(-1px);
+            font-weight: 200;
+
+            &::before {
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    span.toggle {
+        position: absolute;
+        top: 8px;
+        right: 22px;
+        padding: 11.2px;
+        border: 1px solid $color-2;
+        outline: 1.8px solid $color-3;
+        background: $color-3;
+        
+        span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin-bottom: 3px;
+            background: $color-2;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

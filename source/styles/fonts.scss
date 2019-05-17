@@ -1,0 +1,17 @@
+$sans: 'Open Sans', sans-serif;
+$rale: 'Raleway', sans-serif;
+$mont: 'monttserrat', sans-serif;
+
+@mixin font($family:'rale') {
+    @if ($family=='rale') {
+        font-family: $rale;
+    }
+
+    @else if($family=='mont') {
+        font-family: $mont;
+    }
+
+    @else {
+        font-family: $sans;
+    }
+}

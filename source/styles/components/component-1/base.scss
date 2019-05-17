@@ -1,0 +1,53 @@
+header {
+    padding: 27px 0 28px 0;
+    background: $color-1;
+
+    .wrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 1170px;
+        margin: 0 auto;
+
+        div {
+            display: flex;
+            position: absolute;
+            right: 1px;
+
+            a {
+                margin-right: 40px;
+                color: $color-2;
+                font-size: 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                @include font('sans');
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    .logo {
+        color: $color-2;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: .5px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @include font('rale');
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 27px;
+            min-height: 41px;
+            margin-right: -1px;
+            background-image: url(../../../images/component-1/logo.png);
+            background-repeat: no-repeat;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+header {
+    padding-left: 25px;
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        margin: 10px 200px 0 0;
+
+        &::before {
+            margin-top: -10px;
+        }
+    }
+}
