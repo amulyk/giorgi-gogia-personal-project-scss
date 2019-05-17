@@ -85,15 +85,14 @@
                         background-position: center;
                     }
 
-
-
                     $icons: (one:'settings.png', two: 'location.png', three: 'heart.png', four: 'new.png');
 
                     @each $index, $icon in $icons {
-                        
+
                         &.#{$index} {
+
                             &::before {
-                                background-image: url(/images/component-3/#{$icon});    
+                                background-image: url(/images/component-3/#{$icon});
                             }
                         }
                     }
