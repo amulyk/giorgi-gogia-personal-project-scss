@@ -62,7 +62,7 @@
             .list {
                 display: flex;
                 flex-wrap: wrap;
-                margin-left: 1px;
+                margin-left: 2px;
 
                 .item {
                     flex: 200px;
@@ -103,7 +103,7 @@
                         color: $color-5;
                         font-size: 18px;
                         font-weight: 800;
-                        letter-spacing: -.26px;
+                        letter-spacing: -.35px;
 
                         @include font('rale');
                     }
